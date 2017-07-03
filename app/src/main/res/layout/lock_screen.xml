@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="문제 다음 중 ㅁㅁㅁ에 ㅁㅁㅁ하지 않는 것은?"
+        android:id="@+id/tv_Question"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/textClock"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFF"
+        android:textStyle="bold"/>
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textClock"
+        android:textSize="30dp"
+        android:layout_marginTop="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@id/tv_Question"
+        android:textColor="#FFF"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        android:padding="15dp"
+        android:layout_above="@+id/linearLayout_BottomButton"
+        android:layout_alignParentLeft="true">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New RadioButton"
+            android:id="@+id/radioButton"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:button="@android:drawable/list_selector_background"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#ff000000"
+            android:checked="false"
+            android:paddingBottom="5dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New RadioButton"
+            android:id="@+id/radioButton2"
+            android:layout_below="@id/radioButton"
+            android:layout_alignLeft="@id/radioButton"
+            android:button="@android:drawable/list_selector_background"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#ff000000"
+            android:checked="false"
+            android:paddingBottom="5dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New RadioButton"
+            android:id="@+id/radioButton3"
+            android:layout_below="@id/radioButton2"
+            android:layout_alignLeft="@id/radioButton2"
+            android:button="@android:drawable/list_selector_background"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#ff000000"
+            android:checked="false"
+            android:paddingBottom="5dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New RadioButton"
+            android:id="@+id/radioButton4"
+            android:button="@android:drawable/list_selector_background"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20dp"
+            android:layout_below="@id/radioGroup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:textColor="#ff000000"
+            android:checked="false"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:id="@id/linearLayout_BottomButton">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전화"
+            android:id="@+id/button_call"
+            android:layout_below="@id/radioGroup"
+            android:layout_alignParentLeft="true"
+            android:background="#ff8f8f"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="카메라"
+            android:id="@+id/button_camera"
+            android:layout_alignBottom="@id/button_call"
+            android:layout_toRightOf="@id/button_call"
+            android:background="#ff8f8f"
+            android:allowUndo="false"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="메세지"
+            android:id="@+id/button_message"
+            android:layout_alignBottom="@id/button_camera"
+            android:layout_toRightOf="@id/button_camera"
+            android:layout_weight="1"
+            android:background="#ff8f8f" />
+    </LinearLayout>
+
+</RelativeLayout>

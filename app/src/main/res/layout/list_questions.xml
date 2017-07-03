@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="모든문제 모아보기"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textColor="#000000"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView_questionsList"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:padding="0dp"
+        android:paddingTop="10dp"/>
+
+</LinearLayout>

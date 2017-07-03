@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.iptime.proncan.touchstudyremake.MainActivity">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingTop="20dp">
+
+        <ImageButton
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:id="@+id/btn_start"
+            android:src="@drawable/bt_01"
+            android:background="#ffffff"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentLeft="true" />
+
+        <ImageButton
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:id="@+id/btn_stop"
+            android:src="@drawable/bt_02"
+            android:background="#ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/btn_start"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:id="@+id/imageButton"
+            android:background="#ffffff"
+            android:src="@drawable/bt_03"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <ImageButton
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:id="@+id/btn_questionList"
+            android:background="#ffffff"
+            android:src="@drawable/bt_04"
+            android:longClickable="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/imageButton"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:id="@+id/btn_mistakesList"
+            android:background="#ffffff"
+            android:src="@drawable/bt_05"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <ImageButton
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:id="@+id/btn_credits"
+            android:background="#ffffff"
+            android:src="@drawable/bt_06"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/btn_mistakesList"/>
+    </RelativeLayout>
+
+</LinearLayout>
