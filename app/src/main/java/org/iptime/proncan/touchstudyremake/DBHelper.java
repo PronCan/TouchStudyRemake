@@ -22,20 +22,14 @@ public class DBHelper extends SQLiteOpenHelper {
     ContentValues values;
     Cursor cursor;
 
-    static boolean checkUpdate = false;
-
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
-        checkUpdate = true;
         onCreate(db);
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-
-        checkUpdate = true;
-
         db.execSQL("CREATE TABLE " + TABLE_NAME + "(" +
                 "id INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 "question TEXT, " +
@@ -46,7 +40,6 @@ public class DBHelper extends SQLiteOpenHelper {
                 "answerNum INTEGER, " +
                 "comment TEXT," +
                 "checkAnswer INTEGER )");
-        // 순서대로 : 문제번호, 문제, 1번답, 2번답, 3번답, 4번답, 답 번호, 해설, 틀림여부
     }
 
     public void addQuestion(Question q) {

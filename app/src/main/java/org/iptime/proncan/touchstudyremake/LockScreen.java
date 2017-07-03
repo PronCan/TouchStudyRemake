@@ -38,6 +38,7 @@ public class LockScreen extends Activity implements View.OnClickListener {
 
         mDBHelper = new DBHelper(this);
         questions = mDBHelper.getAllQuestions();
+        if(questions.size() == 0) addTable();
         question_Number = questions.size();
         question_displayNumber = (int) (Math.random() * question_Number + 1);
 
@@ -59,7 +60,6 @@ public class LockScreen extends Activity implements View.OnClickListener {
         btn_camera.setOnClickListener(this);
 
 
-        if (DBHelper.checkUpdate) addTable();
         try {
             setScreen();
         } catch (Exception e) {
@@ -351,13 +351,6 @@ public class LockScreen extends Activity implements View.OnClickListener {
         mDBHelper.addQuestion(new Question("실직자에게 실업 급여를 지급하여 생계를 지원하고 재취업을 촉진하는 사회보험은?", "국민 연금", "산업 재해 보상 보험", "고용 보험", "국민 건강 보험", 3,
                 "고용 보험은 실직자에게 실업 급여를 지급하여 생계를 지원하고 재취업을 촉진하는 한편, 실업의 예방과 직업 훈련 강화를 위하여 기업에 장려금 등을 지원하는 제도이다."));
 
-        //80문제
-
-
-
-
-
-
-
+        questions = mDBHelper.getAllQuestions();
     }
 }
