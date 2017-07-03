@@ -4,88 +4,93 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/main_bg"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
     tools:context="org.iptime.proncan.touchstudyremake.MainActivity">
 
     <RelativeLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:orientation="horizontal"
         android:paddingTop="20dp">
 
         <ImageButton
-            android:layout_width="140dp"
-            android:layout_height="140dp"
             android:id="@+id/btn_start"
-            android:src="@drawable/bt_01"
-            android:background="#ffffff"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_alignParentLeft="true"
             android:layout_marginTop="40dp"
-            android:layout_alignParentLeft="true" />
+            android:background="#ffffff"
+            android:src="@drawable/bt_01" />
 
         <ImageButton
-            android:layout_width="140dp"
-            android:layout_height="140dp"
             android:id="@+id/btn_stop"
-            android:src="@drawable/bt_02"
-            android:background="#ffffff"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
             android:layout_alignParentRight="true"
-            android:layout_alignTop="@id/btn_start"/>
+            android:layout_alignTop="@id/btn_start"
+            android:background="#ffffff"
+            android:src="@drawable/bt_02" />
 
     </RelativeLayout>
 
     <RelativeLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
         <ImageButton
-            android:layout_width="140dp"
-            android:layout_height="140dp"
             android:id="@+id/imageButton"
-            android:background="#ffffff"
-            android:src="@drawable/bt_03"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"/>
-
-        <ImageButton
             android:layout_width="140dp"
             android:layout_height="140dp"
-            android:id="@+id/btn_questionList"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
             android:background="#ffffff"
-            android:src="@drawable/bt_04"
-            android:longClickable="false"
+            android:src="@drawable/bt_03" />
+
+        <ImageButton
+            android:id="@+id/btn_questionList"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
             android:layout_alignParentRight="true"
-            android:layout_alignTop="@id/imageButton"/>
+            android:layout_alignTop="@id/imageButton"
+            android:background="#ffffff"
+            android:longClickable="false"
+            android:src="@drawable/bt_04" />
 
 
     </RelativeLayout>
 
     <RelativeLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
         <ImageButton
-            android:layout_width="140dp"
-            android:layout_height="140dp"
             android:id="@+id/btn_mistakesList"
-            android:background="#ffffff"
-            android:src="@drawable/bt_05"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"/>
-
-        <ImageButton
             android:layout_width="140dp"
             android:layout_height="140dp"
-            android:id="@+id/btn_credits"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
             android:background="#ffffff"
-            android:src="@drawable/bt_06"
+            android:src="@drawable/bt_05" />
+
+        <ImageButton
+            android:id="@+id/btn_credits"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
             android:layout_alignParentRight="true"
-            android:layout_alignTop="@id/btn_mistakesList"/>
+            android:layout_alignTop="@id/btn_mistakesList"
+            android:background="#ffffff"
+            android:src="@drawable/bt_06" />
     </RelativeLayout>
 
 </LinearLayout>
