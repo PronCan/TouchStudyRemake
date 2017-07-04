@@ -4,10 +4,14 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Matrix;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
+
+import static org.iptime.proncan.touchstudyremake.R.id.imageButton;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
@@ -56,21 +60,5 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 startActivity(intent);
                 break;
         }
-    }
-
-    public void creditsDialog() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("앱을 만든 사람들");
-        builder.setMessage("선린인터넷고등학교\n김수진 : 메인 개발\n이은진 : 서브 개발, DB\n장민정 : 메인 디자인\n장소정 : 서브 개발, 프론트\n최은아 : 기획, 서브 디자인");
-        builder.setCancelable(false);        // 뒤로 버튼 클릭시 취소 가능 설정
-        builder.setPositiveButton("확인", new DialogInterface.OnClickListener(){
-            // 확인 버튼 클릭시 설정
-            public void onClick(DialogInterface dialog, int whichButton){
-                //finish();
-
-            }
-        });
-        AlertDialog dialog = builder.create();    // 알림창 객체 생성
-        dialog.show();    // 알림창 띄우기
     }
 }

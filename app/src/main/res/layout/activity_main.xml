@@ -52,7 +52,9 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:background="#ffffff"
-            android:src="@drawable/bt_03" />
+            android:src="@drawable/profile"
+            android:scaleType="fitXY"
+            />
 
         <ImageButton
             android:id="@+id/btn_questionList"

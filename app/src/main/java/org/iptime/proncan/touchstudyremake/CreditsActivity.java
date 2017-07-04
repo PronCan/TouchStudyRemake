@@ -11,12 +11,16 @@ import android.widget.Button;
  */
 
 public class CreditsActivity extends Activity implements View.OnClickListener {
-    Button btn_gotoMain = (Button) findViewById(R.id.btn_gotoMain);
+    Button btn_gotoMain;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.profile);
+
+        btn_gotoMain = (Button) findViewById(R.id.btn_gotoMain);
+
+        btn_gotoMain.setOnClickListener(this);
     }
 
     @Override
