@@ -53,7 +53,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 startActivity(intent);
                 break;
             case R.id.btn_credits :
-                creditsDialog();
+                intent = new Intent(this, CreditsActivity.class);
+                startActivity(intent);
                 break;
         }
     }
