@@ -33,8 +33,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/profile_name"
-            android:text="PronCan"
+            android:text="PronCan\n호창"
             android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textAlignment="center"
         />
 
     </LinearLayout>
@@ -62,6 +64,14 @@
         android:layout_marginLeft="20dp"
         android:textAlignment="center"
         android:text="Twitter : @proncan_0w0"
+        />
+
+    <Button
+        android:id="@+id/btn_gotoMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
         />
 
 </LinearLayout>

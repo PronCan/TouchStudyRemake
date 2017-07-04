@@ -32,7 +32,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
         listQuestions.setOnClickListener(this);
         listMistakeQuestions.setOnClickListener(this);
         credits.setOnClickListener(this);
-
     }
 
     @Override
